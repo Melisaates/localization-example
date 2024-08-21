@@ -1,0 +1,30 @@
+{
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "forgot": "Forgot password?",
+      "register": "Register",
+      "error": {
+        "email": "Email is required",
+        "password": "Password is required",
+        "wrongCredentials": "Wrong email or password"
+      }
+    },
+    "register": {
+      "error": {
+        "createPersonError": "There was an error while creating person",
+        "signupError": "There was an error while signing up"
+      }
+    }
+  },
+  "calendar": {
+    "availability": {
+      "error": {
+        "invalidDayOrTime": "Invalid day or time selected"
+      }
+    }
+  }
+}

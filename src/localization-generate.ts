@@ -19,12 +19,13 @@ function convertToJSON(localizationKeys: any): any {
 }
 
 const jsonResult = convertToJSON(LocalizationKeys);
-const outputPath = path.resolve(__dirname, '../../resources/locales/en.json');
+const outputPath = path.resolve(__dirname, './resources/locales/en.json');
 
 console.log('Output path:', outputPath);
 
 try {
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true }); // Dizinlerin var olduğunu ve oluşturulacağını kontrol eder
+  console.log('Creating directory at:', path.dirname(outputPath));
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(jsonResult, null, 2));
   console.log('JSON result:', JSON.stringify(jsonResult, null, 2));
 
